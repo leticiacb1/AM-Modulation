@@ -7,7 +7,11 @@ O objetivo desse projeto é a transmissão de um áudio que ocupe bandas de baix
 
 Após a transmissão via sinal acústico, o receptor, que gravou o sinal transmitido, deverá demodular o sinal e reproduzi-lo, de maneira audível novamente.
 
+--- 
+
 <h4> 📝️ Etapas do projeto </h4>
+
+---
 
 <h5> 🔊️ Modularização do audio </h5>
 
@@ -27,3 +31,38 @@ taxa de amostragem de **44100 Hz** (arquivo `audio/encoder/audio5s.wav`).
 - Demodulação do audio recebido.
 
 - Filtre as frequencias superiores **2.500Hz**.
+
+---
+
+<h4> ⚡️ Rodagem do código </h4>
+
+---
+
+Baixe as depêndencias necessárias para o funcionamento do código, copiando e colando no terminal o comando abaixo.
+
+```bash
+
+pip install -r requirements.txt
+
+```
+Escolha um computador será o Reprodutor de som da aplicação (`encoder.py`). Dessa forma, digite em seu terminal o comando:
+
+```bash
+
+python encoder.py
+
+```
+
+
+O outro computador para ser o receptor do audio e será repsonsável pela sua demodulação (`decoder.py`) , e rode em seu terminal o comando a seguir:
+
+```bash
+
+python Decoder.py
+
+```
+
+
+No prompt de comando surgirar um display de opções da ação que se deseja realizar, selecione uma das opções para a transmissao do som e tente sincronizar a reprodução final do áudio com a captação do mesmo pelo computador receptor.
+
+👨‍💻️ Teste todas as possibilidades de som do display e divirta-se !  
