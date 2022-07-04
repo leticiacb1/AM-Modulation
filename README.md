@@ -12,7 +12,7 @@ Após a transmissão via sinal acústico, o receptor, que gravou o sinal transmi
 <h5> 🔊️ Modularização do audio </h5>
 
 - Leitura de um arquivo de áudio .wav de poucos segundos (entre 2 e 5) previamente gravado com uma
-taxa de amostragem de **44100 Hz**.
+taxa de amostragem de **44100 Hz** (arquivo `audio/encoder/audio5s.wav`).
 
 - Filtre e elimine as frequências acima de **2500 Hz**.
 
@@ -21,3 +21,9 @@ taxa de amostragem de **44100 Hz**.
 - Normalização do sinal de áudio.
 
 <h5> 🎤️ Demodulação do audio </h5>
+
+- Execute o áudio em um computador (`encoder.py`) e grave em outro (`decoder.py`), ou em caso de muito ruído, leia o arquivo de audio modularizado (arquivo `audio/encoder/audioModNorma.wav`) e peça para que seu colega grave o áudio modulado.
+
+- Demodulação do audio recebido.
+
+- Filtre as frequencias superiores **2.500Hz**.
