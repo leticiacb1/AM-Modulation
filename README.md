@@ -7,4 +7,17 @@ O objetivo desse projeto é a transmissão de um áudio que ocupe bandas de baix
 
 Após a transmissão via sinal acústico, o receptor, que gravou o sinal transmitido, deverá demodular o sinal e reproduzi-lo, de maneira audível novamente.
 
-<h4> ✅️ Etapas da transmissão </h4>
+<h4> 📝️ Etapas do projeto </h4>
+
+<h5> 🔊️ Modularização do audio </h5>
+
+- Leitura de um arquivo de áudio .wav de poucos segundos (entre 2 e 5) previamente gravado com uma
+taxa de amostragem de **44100 Hz**.
+
+- Filtre e elimine as frequências acima de **2500 Hz**.
+
+- Module esse sinal de áudio em AM com portadora de **13.000 Hz**. 
+
+- Normalização do sinal de áudio.
+
+<h5> 🎤️ Demodulação do audio </h5>
